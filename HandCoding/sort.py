@@ -28,11 +28,11 @@ def quick_sort(arr):
         if high <= low:
             return
 
-        mid = parition(low, high)
+        mid = partition(low, high)
         sort(low, mid - 1)
         sort(mid, high)
 
-    def parition(low, high):
+    def partition(low, high):
         pivot = arr[(low + high) // 2]
 
         while low <= high:
